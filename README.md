@@ -14,10 +14,11 @@ With this method prediction made by model is not accurate so I am trying other a
 
 For this task, we developed 4 models for each metric. All models use simple neural networks.
 All the model takes three inputs and predicts the other column as output.
-<code>
-#   Date            Clicks	  Impressions 	CTR		    Position
-
-1	  2021-06-07	    6412    	124682	      5.14%		  8.8
+| Command | Description |
+| --- | --- |
+|#|Date|Clicks|Impressions|CTR|Position|
+| --- | --- | --- | --- | --- | --- |
+|1|2021-06-07|6412|124682|5.14%|8.8|
 2	  2021-06-06	    4960	    112835		    4.4%	  	9.82
 3	  2021-06-05	    4060  	  93446	      	4.34%		  9.38
 4	  2021-06-04	    5094  	  112908		    4.51%	  	10.98

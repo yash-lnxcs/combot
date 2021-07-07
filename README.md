@@ -7,7 +7,7 @@ For this, we use the Recurrent neural network(RNN). It takes 7 days of clicks as
 In the image below the yellow line is last year's click data and the blue line is the prediction of next year. 
 
 ![alt text](https://github.com/yashjv8/combotblob/main/images/image4.png?raw=true)
-
+![alt text](https://github.com/yashjv8/combot/blob/main/images/image4.png)
 With this method prediction made by model is not accurate so I am trying other alternative models for better outcomes
 
 # 2 second We want to be able to change the metric/variable of Google Search Console’s Performance report to see how it affects the other metrics. For example, if we change the average position from 8.1 to 9 how it will affect all the other metrics one year ahead

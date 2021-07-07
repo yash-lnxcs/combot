@@ -8,8 +8,6 @@ In the image below the yellow line is last year's click data and the blue line i
 
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image4.png)
 
-With this method prediction made by model is not accurate so I am trying other alternative models for better outcomes
-
 # 2 second We want to be able to change the metric/variable of Google Search Console’s Performance report to see how it affects the other metrics. For example, if we change the average position from 8.1 to 9 how it will affect all the other metrics one year ahead
 
 For this task, we developed 4 models for each metric. All models use simple neural networks.
@@ -35,21 +33,33 @@ All the model takes three inputs and predicts the other column as output.
 I use these 14 rows to test the model (unseen data)
 
 Task 1 clicks prediction 
-This model takes a list as an input [ <impressions>, <CTR>, <Position> ] and predicts clicks as an output.
+
+This model takes a list as an input [impressions, CTR, Position] and predicts clicks as an output.
+
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image7.png)
+
 The predicted values and actual values have a difference of 200 on average.
 
 Task 2 impressions prediction  
-This model takes a list as an input [ <clicks>, <CTR>, <Position> ] and impressions clicks as an output.
+
+This model takes a list as an input [clicks, CTR, Position] and impressions clicks as an output.
+
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image3.png)
+
 The predicted values and actual values have a difference of 1000 on average.
 
 Task 3 CTR prediction
-This model takes a list as an input [ <Clicks>, <impressions>, <Position> ] and predicts CTR as an output.
+
+This model takes a list as an input [Clicks, impressions, Position] and predicts CTR as an output.
+
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image8.png)
+
 The predicted values and actual values have a difference of less than 0.01.
 
 Task 4 position prediction  
-This model takes a list as an input [<clicks>, <impressions>, <CTR>] and predicts position as an output.
+
+This model takes a list as an input [clicks, impressions, CTR] and predicts position as an output.
+
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image2.png)
+
 The predicted values and actual values have a difference of 1 or 2.

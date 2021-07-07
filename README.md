@@ -1,25 +1,33 @@
-# combot
 
-# we use this tools for devlopmentte
+# We use this tools for devlopmentte
 
-Tensorflow
+* Tensorflow
 
-Keras
+* Keras
 
-TensorBoard
+* TensorBoard
 
-AWS Sagemaker
+* AWS Sagemaker
 
-# 1 First we want to Forecast metric one year ahead without variable changes
+# Time Series Forecasting 
 
+## Project Goal
+We want to forecast metric one year ahead without variable changes
+
+## Approach we Tooked
 For this, we use the Recurrent neural network(RNN). It takes 7 days of clicks as an input and predicts the next day's click as output.
 
 In the image below the yellow line is last year's click data and the blue line is the prediction of next year. 
 
 ![alt text](https://github.com/yashjv8/combot/blob/main/images/image4.png)
 
-# 2 second We want to be able to change the metric/variable of Google Search Console’s Performance report to see how it affects the other metrics. For example, if we change the average position from 8.1 to 9 how it will affect all the other metrics one year ahead
+# Deep Learning
 
+## Project Goal
+
+Second We want to be able to change the metric/variable of Google Search Console’s Performance report to see how it affects the other metrics. For example, if we change the average position from 8.1 to 9 how it will affect all the other metrics one year ahead
+
+## Approach we Tooked
 For this task, we developed 4 models for each metric. All models use simple neural networks.
 All the model takes three inputs and predicts the other column as output.
 
@@ -42,7 +50,7 @@ All the model takes three inputs and predicts the other column as output.
 
 I use these 14 rows to test the model (unseen data)
 
-Task 1 clicks prediction 
+## Task 1 clicks prediction 
 
 This model takes a list as an input [impressions, CTR, Position] and predicts clicks as an output.
 
@@ -50,7 +58,7 @@ This model takes a list as an input [impressions, CTR, Position] and predicts cl
 
 The predicted values and actual values have a difference of 200 on average.
 
-Task 2 impressions prediction  
+## Task 2 impressions prediction  
 
 This model takes a list as an input [clicks, CTR, Position] and impressions clicks as an output.
 
@@ -58,7 +66,7 @@ This model takes a list as an input [clicks, CTR, Position] and impressions clic
 
 The predicted values and actual values have a difference of 1000 on average.
 
-Task 3 CTR prediction
+## Task 3 CTR prediction
 
 This model takes a list as an input [Clicks, impressions, Position] and predicts CTR as an output.
 
@@ -66,7 +74,7 @@ This model takes a list as an input [Clicks, impressions, Position] and predicts
 
 The predicted values and actual values have a difference of less than 0.01.
 
-Task 4 position prediction  
+## Task 4 position prediction  
 
 This model takes a list as an input [clicks, impressions, CTR] and predicts position as an output.
 

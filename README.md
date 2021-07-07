@@ -14,7 +14,7 @@ With this method prediction made by model is not accurate so I am trying other a
 
 For this task, we developed 4 models for each metric. All models use simple neural networks.
 All the model takes three inputs and predicts the other column as output.
-
+<code>
 #   Date            Clicks	  Impressions 	CTR		    Position
 
 1	  2021-06-07	    6412    	124682	      5.14%		  8.8
@@ -31,7 +31,7 @@ All the model takes three inputs and predicts the other column as output.
 12	2021-05-27	    6246	    122663	      5.09%	  	9.61
 13	2021-05-26  	  6318   	  118600		    5.33%		  9.14
 14	2021-05-25	    5892  	  115586		    5.1%		  9.01
-
+</code>
 I use these 14 rows to test the model (unseen data)
 
 Task 1 clicks prediction 

@@ -6,7 +6,7 @@ For this, we use the Recurrent neural network(RNN). It takes 7 days of clicks as
 
 In the image below the yellow line is last year's click data and the blue line is the prediction of next year. 
 
-
+![alt text](https://github.com/yashjv8/combot/images/image1.jpg?raw=true)
 
 With this method prediction made by model is not accurate so I am trying other alternative models for better outcomes
 

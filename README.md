@@ -1,5 +1,15 @@
 # combot
 
+# we use this tools for devlopmentte
+
+Tensorflow
+
+Keras
+
+TensorBoard
+
+AWS Sagemaker
+
 # 1 First we want to Forecast metric one year ahead without variable changes
 
 For this, we use the Recurrent neural network(RNN). It takes 7 days of clicks as an input and predicts the next day's click as output.
